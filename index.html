@@ -1699,6 +1699,118 @@
             min-height: 0;
         }
 
+        @media (min-width: 900px) {
+            #adventure-overlay {
+                padding: 0;
+            }
+
+            .adventure-container {
+                width: min(1180px, 96vw);
+                max-width: 1180px;
+                max-height: 95vh;
+                min-height: 78vh;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                gap: 24px;
+                padding: 24px;
+                align-items: stretch;
+                justify-items: stretch;
+                background: linear-gradient(135deg, #F6EBD3 0%, #E8D7B9 50%);
+            }
+
+            .app-header {
+                grid-column: 1 / -1;
+                padding: 0 12px;
+            }
+
+            .app-content {
+                display: grid;
+                grid-template-columns: 1.4fr 0.9fr;
+                gap: 24px;
+                width: 100%;
+                min-height: calc(100% - 70px);
+            }
+
+            .left-col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 0;
+            }
+
+            .right-col {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 18px;
+                min-height: 0;
+            }
+
+            .left-col .adventure-stage {
+                width: 100%;
+                height: 100%;
+                max-height: 100%;
+                min-height: 0;
+                min-width: 0;
+                aspect-ratio: 4 / 5;
+                border-radius: 24px;
+                padding: 18px;
+                background-color: rgba(255,255,255,0.8);
+                box-shadow: inset 0 0 20px rgba(0,0,0,0.08), 0 16px 36px rgba(0,0,0,0.12);
+            }
+
+            .info-panel {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 18px;
+                width: 100%;
+                min-height: 0;
+                max-height: 100%;
+            }
+
+            .info-cards {
+                display: grid;
+                gap: 16px;
+            }
+
+            .adventure-info-card.panel-card {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding: 14px;
+                min-height: 96px;
+            }
+
+            .adventure-mini-image {
+                width: 56px;
+                height: 56px;
+                flex: 0 0 56px;
+            }
+
+            .info-value {
+                font-size: 15px;
+                margin-left: 8px;
+            }
+
+            #adventure-instruction {
+                font-size: 15px;
+                line-height: 1.5;
+                margin: 0;
+                padding: 0;
+            }
+
+            .start-action {
+                margin-top: auto;
+                width: 100%;
+            }
+
+            .start-action .btn-gold {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
         .adventure-title {
             font-size: clamp(24px, 4vw, 32px);
             color: #4E2E1E;
